@@ -1,0 +1,30 @@
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
+#include <QDialog>
+#include "logindialog.h"
+#include <QString>
+MainWindow::MainWindow(QWidget *parent) :
+    QMainWindow(parent),
+    ui(new Ui::MainWindow)
+{
+    ui->setupUi(this);
+    LoginDialog dlg;
+    QObject::connect(&dlg,SIGNAL(to_MainWindow_signal(QString)),this,SLOT(from_Dialog_sidnal(QString)));
+    dlg.show();
+    if(dlg.exec()==QDialog::Accepted){
+        //dlg.close();
+        this->show();
+    }
+}
+
+MainWindow::~MainWindow()
+{
+    delete ui;
+}
+void MainWindow::welcomeUser(){
+
+}
+void MainWindow::from_Dialog_signal(QString data){
+    QString wec=tr("welcome ")+data+tr("!");
+    ui->wcUsrLabel->setText(data);
+}
