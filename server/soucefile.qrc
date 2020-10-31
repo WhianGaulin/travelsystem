@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/file"/>
+    <qresource prefix="/file" lang=".csv"/>
+    <qresource prefix="/">
+        <file>algorithm.cpp</file>
+        <file>algorithm.h</file>
+        <file>dataitem.cpp</file>
+        <file>dataitem.h</file>
+        <file>dataset.cpp</file>
+        <file>dataset.h</file>
+        <file>datetime.cpp</file>
+        <file>datetime.h</file>
+        <file>interaction.h</file>
+        <file>log.cpp</file>
+        <file>log.h</file>
+        <file>logindialog.cpp</file>
+        <file>logindialog.h</file>
+        <file>main.cpp</file>
+        <file>mainwindow.cpp</file>
+        <file>mainwindow.h</file>
+        <file>mappainter.cpp</file>
+        <file>mappainter.h</file>
+        <file>sourcefile.cpp</file>
+        <file>timer.cpp</file>
+        <file>timer.h</file>
+        <file>traveler.cpp</file>
+        <file>traveler.h</file>
+    </qresource>
+</RCC>
